@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobRinger - Find Your Dream Job</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007BFF;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      color: #333;
+      padding: 0.5rem;
+    }
+    nav a:hover {
+      color: #007BFF;
+    }
+    .hero {
+      background-color: #007BFF;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .search-bar input {
+      padding: 0.75rem;
+      width: 250px;
+      border: none;
+      border-radius: 4px;
+    }
+    .search-bar button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background-color: #fff;
+      color: #007BFF;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .quick-search {
+      padding: 2rem;
+      text-align: center;
+    }
+    .quick-search h2 {
+      margin-bottom: 1rem;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .category {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .category:hover {
+      background-color: #007BFF;
+      color: #fff;
+    }
+    .employers {
+      background-color: #f1f1f1;
+      padding: 2rem;
+      text-align: center;
+    }
+    .employers h2 {
+      margin-bottom: 1rem;
+    }
+    .employers p {
+      margin-bottom: 1.5rem;
+    }
+    .employers a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .social-links {
+      margin-bottom: 1rem;
+    }
+    .social-links a {
+      margin: 0 0.5rem;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .search-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .search-bar input, .search-bar button {
+        width: 100%;
+        max-width: 300px;
+      }
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">JobRinger</div>
+    <nav>
+      <a href="#">Jobs</a>
+      <a href="#">Active Employers</a>
+      <a href="#">Job Blogs </a>
+      <a href="#">Pricing</a>
+      <a href="#">Jobseeker Login</a>
+      <a href="#">Employer Login</a>
+      0
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bringing You the Perfect Job!</h1>
+    <p>11,000+ Jobs to Apply</p>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for jobs..." />
+      <button>Search</button>
+    </div>
+  </section>
+
+  <section class="quick-search">
+    <h2>Quick Job Search</h2>
+    <div class="categories">
+      <div class="category">#Fresher</div>
+      <div class="category">#Work From Home</div>
+      <div class="category">#IT</div>
+      <div class="category">#HR</div>
+      <div class="category">#Finance</div>
+      <div class="category">#Marketing</div>
+    </div>
+  </section>
+
+  <section class="employers">
+    <h2>Employers</h2>
+    <p>Recruit smart, Recruit right</p>
+    <a href="#">Register for FREE</a>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 JobRinger. All rights reserved.</p>
+  </footer>
+</body>
+</html>
